@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Tembak-Tembakan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Game Tembak-Tembakan Sederhana</h1>
+    <div id="status">
+      <p>Nyawa Kamu: <span id="hpPlayer">5</span></p>
+      <p>Nyawa Musuh: <span id="hpEnemy">5</span></p>
+    </div>
+
+    <div id="weapon-choice">
+      <h2>Pilih Senjata</h2>
+      <button onclick="pilihSenjata('Pistol', 1)">Pistol (Damage: 1)</button>
+      <button onclick="pilihSenjata('Shotgun', 2)">Shotgun (Damage: 2)</button>
+      <button onclick="pilihSenjata('Sniper', 3)">Sniper (Damage: 3)</button>
+    </div>
+
+    <div id="log"></div>
+
+    <button id="nextTurn" onclick="nextTurn()" style="display: none;">Lanjutkan</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
